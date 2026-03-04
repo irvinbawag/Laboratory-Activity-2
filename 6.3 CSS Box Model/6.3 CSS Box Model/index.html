@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Box Model</title>
+  <style>
+    body {
+    margin: 0;
+    background: #e9e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: auto 300px 300px;
+  }
+
+  .box {
+    border: 10px solid black;
+    box-sizing: border-box;
+  }
+
+  .box1 {
+    background: linear-gradient(to bottom right, #6aa9a9, #3c7d7d);
+    padding: 20px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .box2 {
+    background: #f4d742;
+    grid-column: 2;
+    grid-row: 2;
+    margin: 20px 0; 
+  }
+
+  .box3 {
+    background: #d65c5c;
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <div class="box box1">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Aliquam at sapien porttitor urna elementum lacinia.
+      In id magna pulvinar, ultricies lorem id, vehicula elit.
+      Aliquam eu luctus nisl, vitae pellentesque magna.
+      Phasellus dolor metus, laoreet ac convallis sit amet,
+      efficitur sed dolor.
+    </p>
+  </div>
+
+  <div class="box box2"></div>
+
+  <div class="box box3"></div>
+</div>
+</body>
+
+</html>
